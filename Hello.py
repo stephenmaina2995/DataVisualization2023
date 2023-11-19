@@ -10,8 +10,8 @@ from matplotlib import pyplot as plt
 
 # plt.show()
 plt.style.use("fivethirtyeight")
-with open('Hello.csv') as csv_file:
+with open('CANISHackathon2023.csv') as csv_file:
     csv_reader= csv.DictReader(csv_file)
     
     row = next(csv_reader)
-    print (row['email'])
+    print (row['Language'])
