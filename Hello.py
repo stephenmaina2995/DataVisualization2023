@@ -1,17 +1,23 @@
-import csv
-import numpy as np
-from matplotlib import pyplot as plt
+# import csv
+import pandas as pd
+import matplotlib.pyplot as plt
 
-# dev_x = []
+# plt.style.use('seaborn')
 
-# dev_y= []
+# data=pd.read_csv('CANISHackathon2023.csv')
 
-# plt.plot(dev_x, dev_y)
+fig,ax = plt.subplots(nrows=2,ncols=1)
 
-# plt.show()
-plt.style.use("fivethirtyeight")
-with open('CANISHackathon2023.csv') as csv_file:
-    csv_reader= csv.DictReader(csv_file)
+# with open('CANISHackathon2023.csv') as csv_file:
+#     csv_reader = csv.reader(csv_file)
     
-    row = next(csv_reader)
-    print (row['Language'])
+#     next(csv_reader)
+    
+#     for line in csv_reader:
+#         print(line[2])
+
+plt.tight_layout()
+
+plt.show()
+
+# print(ax)
